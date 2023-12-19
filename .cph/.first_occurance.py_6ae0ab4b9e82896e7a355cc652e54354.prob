@@ -1,0 +1,1 @@
+{"name":"Local: first_occurance","url":"p:\\CP-solution\\first_occurance.py","tests":[{"id":1702974067079,"input":"ll\nhello","output":"hello"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"p:\\CP-solution\\first_occurance.py","group":"local","local":true}
