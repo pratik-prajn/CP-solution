@@ -1,1 +1,1 @@
-{"name":"Local: div31","url":"p:\\CP-solution\\div31.py","tests":[{"id":1702997165352,"input":"4\n1\n3\n5\n975461057789971042\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"p:\\CP-solution\\div31.py","group":"local","local":true}
+{"name":"Local: div31","url":"p:\\CP-solution\\div31.py","tests":[{"id":1702997165352,"input":"4\n1\n3\n5\n975461057789971042","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"p:\\CP-solution\\div31.py","group":"local","local":true}
