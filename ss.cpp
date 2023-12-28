@@ -9,25 +9,19 @@ int main()
     cin >> t;
     while(t--)
     {
-        int n;
-        cin>>n;
-        int arr[n];
-        vector<pair<int,int>>v;
-
-        for (int i=0;i<n;i++)
+         int num;
+        cin >> num;
+        //cout<<num;
+        string strin;
+        cin >> strin;
+        int a = 0;
+        //cout<<num;
+        set<char> st;
+        for (auto ch:strin)
         {
-            cin>>arr[i];
+            st.insert(ch);
+            a+=st.size();
         }
-        string s;
-        cin>>s;
-        for (int i=0;i<n;i++)
-        {
-            
-            v.push_back( make_pair(arr[i],s[i]) );
-        }
-        for (int i=0;i<n;i++)
-        {
-            if (v[i].first)
-        }    
+cout<<a<<endl;   
     }
 }

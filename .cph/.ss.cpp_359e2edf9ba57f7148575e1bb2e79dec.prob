@@ -1,0 +1,1 @@
+{"name":"Local: ss","url":"p:\\CP-solution\\ss.cpp","tests":[{"id":1703443731530,"input":"5\n5\naaaaa\n1\nz\n5\nababa\n14\nbcdaaaabcdaaaa\n20\nabcdefghijklmnopqrst","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"p:\\CP-solution\\ss.cpp","group":"local","local":true}

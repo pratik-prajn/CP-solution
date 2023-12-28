@@ -1,63 +1,37 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
 int main()
 {
    int t;
     cin>>t;
     while(t--)
     {
-        int n;
-        cin>>n;
-        int a[n];
-        int b[n];
-        map<int,int> map;
-        vector<int> ones;
-        vector<int> zeroes;
-        for(int i=0;i<n;i++)
+       long long int n,m,k;
+       cin>>n>>m>>k;
+       int x=n/k;
+       if (m==0)
+       {
+        cout<<0<<endl;
+
+       }
+       else{
+        if (x==1)
         {
-            cin>>a[i];
-            b[i]=a[i];
-            map[a[i]]=i;
+            cout<<0<<endl;
         }
-        string s;
-        cin>>s;
- 
-        for(int i=0;i<n;i++)
-        {
-            if(s[i]=='0')
-                zeroes.push_back(a[i]);
-            else
-                ones.push_back(a[i]);
+        else{
+            if (x>=m)
+            {
+                cout<<m<<endl;
+            }
+            else{
+                
+            }
         }
-        sort(zeroes.begin(),zeroes.end());
-        sort(ones.begin(),ones.end());
-        sort(a,a+n);
- 
- 
-        reverse(zeroes.begin(),zeroes.end());
-        reverse(ones.begin(),ones.end());
-        reverse(a,a+n);
-    /*    for(int i=0;i<ones.size();i++)
-            cout<<ones[i]<<" ";
- 
-        cout<<endl;
-        for(int i=0;i<zeroes.size();i++)
-            cout<<zeroes[i]<<" ";
-            cout<<endl;*/
-int i;
-            for(i=0;i<ones.size();i++)
-            {
-                b[map[ones[i]]]=a[i];
-            }
-            for(int j=0;j<zeroes.size();j++)
-            {
-                b[map[zeroes[j]]]=a[i];
-                i++;
-            }
- 
-        for(int i=0;i<n;i++)
-            cout<<b[i]<<" ";
-            cout<<endl;
+       }
+       
+
     }
 }

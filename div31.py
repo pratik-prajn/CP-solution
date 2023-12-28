@@ -1,7 +1,11 @@
 for _ in range(int(input())):
 	n = int(input())
-	if n%2==0:
-		print(n/2)
+	l=list(map(int,input().split()))
+ 
+	x=max(l)
+	if l.count(x)==1:
+		print("YES")
 	else:
-		print(n//2+1)
+		for i in range()
+     
     
