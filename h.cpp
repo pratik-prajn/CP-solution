@@ -1,37 +1,40 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include <iostream>
+#include <unordered_map>
+#include <vector>
 
 
-int main()
-{
-   int t;
-    cin>>t;
-    while(t--)
-    {
-       long long int n,m,k;
-       cin>>n>>m>>k;
-       int x=n/k;
-       if (m==0)
-       {
-        cout<<0<<endl;
+    
 
-       }
-       else{
-        if (x==1)
-        {
-            cout<<0<<endl;
+int main() {
+  int t;
+    std::cin >> t;
+    for (int _ = 0; _ < t; ++_) {
+        int z;
+        std::unordered_map<int, int> m;
+        std::cin >> z;
+        std::vector<int> a(z);
+        for (int i = 0; i < z; ++i) {
+            std::cin >> a[i];
+            m[a[i]]++;
         }
-        else{
-            if (x>=m)
-            {
-                cout<<m<<endl;
-            }
-            else{
-                
+        
+        
+        int rt = 0;
+        for (int i = 0; i < 31; ++i) {
+            rt += 1 << i;
+        }
+        int ans = 0;
+        for (int i = 0; i < z; ++i) {
+            if (m[rt - a[i]] != 0 && m[a[i]] != 0) {
+                ans++;
+                m[rt - a[i]]--;
+                m[a[i]]--;
             }
         }
-       }
-       
-
+        std::cout << z - (2 * ans) + ans << std::endl;
     }
+
+    
+    return 0;
 }
+

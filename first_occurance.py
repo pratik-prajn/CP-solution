@@ -1,24 +1,28 @@
-class Solution:
-    def strStr(self, haystack: str, needle: str) -> int:
-        lps = [0] * len(needle)
+from collections import defaultdict
 
-        # Preprocessing
-        pre = 0
-        for i in range(1, len(needle)):
-            while pre > 0 and needle[i] != needle[pre]:
-                pre = lps[pre-1]
-            if needle[pre] == needle[i]:
-                pre += 1
-                lps[i] = pre
+def main():
+    t = int(input())
+    
+    for _ in range(t):
+        z = int(input())
+        a = list(map(int, input().split()))
+        m = defaultdict(int)
+        
+        for i in range(z):
+            m[a[i]] += 1
+        
+        sum_val = 0
+        for i in range(31):
+            sum_val += 2 ** i
+        
+        ans = 0
+        for i in range(z):
+            if m[sum_val - a[i]] != 0 and m[a[i]] != 0:
+                ans += 1
+                m[sum_val - a[i]] -= 1
+                m[a[i]] -= 1
+        
+        print(z - (2 * ans) + ans)
 
-        # Main algorithm
-        n = 0 #needle index
-        for h in range(len(haystack)):
-            while n > 0 and needle[n] != haystack[h]:
-                n = lps[n-1]
-            if needle[n] == haystack[h]:
-                n += 1
-            if n == len(needle):
-                return h - n + 1
-
-        return -1
+if _name_ == "_main_":
+    main()

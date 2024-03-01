@@ -1,1 +1,1 @@
-floorSqrt
+using namespace std;

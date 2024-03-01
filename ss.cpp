@@ -1,27 +1,24 @@
-#include<bits/stdc++.h>
-#include <string>
+#include <bits/stdc++.h>
+#define ll long long int
+#define pii pair<int,int>
+#define vi vector<int>
+#define pb push_back
+#define no cout<<"NO"<<endl;
+#define yes cout<<"YES"<<endl;
 using namespace std;
 
-
-int main()
-{
+int32_t main() {
     int t;
     cin >> t;
-    while(t--)
-    {
-         int num;
-        cin >> num;
-        //cout<<num;
-        string strin;
-        cin >> strin;
-        int a = 0;
-        //cout<<num;
-        set<char> st;
-        for (auto ch:strin)
-        {
-            st.insert(ch);
-            a+=st.size();
-        }
-cout<<a<<endl;   
+
+    while (t--) {
+        
+        ll n;
+        cin>>n;
+        
+        
+
     }
+
+    return 0;
 }

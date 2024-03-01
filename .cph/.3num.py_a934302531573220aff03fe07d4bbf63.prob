@@ -1,1 +1,1 @@
-{"name":"Local: 3num","url":"p:\\CP-solution\\3num.py","tests":[{"id":1702994041427,"input":"3\n33\n144\n69","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"p:\\CP-solution\\3num.py","group":"local","local":true}
+{"name":"Local: 3num","url":"p:\\CP-solution\\3num.py","tests":[{"id":1702994041427,"input":"3\n10 3\n5 5\n420 69","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"p:\\CP-solution\\3num.py","group":"local","local":true}
