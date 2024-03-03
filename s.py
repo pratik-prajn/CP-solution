@@ -11,7 +11,7 @@ for i in range(t):
     for i in range(1,math.floor(math.sqrt(n))+1):
         if n%i==0:
             if i*k<=n:
-                a=max(a,2**i)
+                a=max(a%2,2**i)
     print(a)
     
     
